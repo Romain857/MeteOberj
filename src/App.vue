@@ -3,18 +3,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <img alt="MeteoOberj" class="logo" src="@/assets/meteoberj.png" width="125" height="125" />
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/user">User</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+      <Header></Header>
+      <RouterView></RouterView>
+      <Footer></Footer>
 </template>
 
 <style scoped>
