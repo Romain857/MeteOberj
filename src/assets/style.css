@@ -9,6 +9,7 @@ ul {
 
 .routerlink {
     margin-top: 0.3rem;
+    margin-left: 0.3rem;
 }
 
 li {
@@ -35,6 +36,7 @@ li .routerlink,
 
 .button {
     margin: 0.2rem;
+    border-radius: 0.8rem;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -45,13 +47,14 @@ li .routerlink,
 
 .button:hover,
 li a:hover {
+    border-radius: 0.8rem;
     background-image: linear-gradient( to right, #E7484F, #F68B1D, #FCED00, #009E4F, #00AAC3, #732982);
-    animation: slidebg 1s linear infinite;
+    animation: slidebg 10s linear infinite;
 }
 
 @keyframes slidebg {
     to {
-        background-position: 10vw;
+        background-position: 15vw;
     }
 }
 

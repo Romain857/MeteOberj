@@ -4,19 +4,16 @@
       <ul>
         <img alt="MeteoOberj" class="logo" src="@/assets/meteoberj.png"/>
         <li>
-      <RouterLink class="routerlink" to="/">Home</RouterLink>
+      <RouterLink class="routerlink" to="/">Accueil</RouterLink>
         </li>
         <li>
-      <RouterLink class="routerlink" to="/user">User</RouterLink>
+      <RouterLink v-if="user" class="routerlink" to="/user">{{user.nickname}}</RouterLink>
       </li>
       <li style="float:right">
-      <button v-if="!user" class="button" @click="login">Log in</button>
+      <button v-if="!user" class="button" @click="login">Connexion</button>
       </li>
       <li style="float:right">
-      <button v-if="user" class="button" @click="logout">Log out</button>
-      </li>
-      <li id="username" style="float:right">
-        <span > {{user.nickname}}</span>
+      <button v-if="user" class="button" @click="logout">Déconnexion</button>
       </li>
     </ul>
     </nav>
