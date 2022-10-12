@@ -2,7 +2,9 @@
 <div class="wrapper">
     <nav>
       <ul>
+        <a href="/amongus">
         <img alt="MeteoOberj" class="logo" src="@/assets/meteoberj.png"/>
+      </a>
         <li>
       <RouterLink class="routerlink" to="/">Accueil</RouterLink>
         </li>
