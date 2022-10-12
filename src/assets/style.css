@@ -24,10 +24,6 @@ li .routerlink,
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #fffd6a;
-}
-
 .logo {
     width: 3rem;
     margin: 0 auto;
@@ -38,16 +34,37 @@ li a:hover {
 }
 
 .button {
-    background-color: #DA70D6;
-    margin: 0.2rem 0.2rem 0.2rem 0;
+    margin: 0.2rem;
     border: none;
-    color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    background-color: whitesmoke;
+    color: #333;
     font-size: 16px;
 }
 
-.button:hover {
-    background-color: #fffd6a;
+.button:hover,
+li a:hover {
+    background-image: linear-gradient( to right, #E7484F, #F68B1D, #FCED00, #009E4F, #00AAC3, #732982);
+    animation: slidebg 1s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 10vw;
+    }
+}
+
+#username {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white;
+    text-align: center;
+    margin-top: 1.15rem;
+}
+
+#username:hover {
+    color: transparent;
+    transition: 500ms ease;
 }

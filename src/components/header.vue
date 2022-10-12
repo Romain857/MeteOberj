@@ -15,6 +15,9 @@
       <li style="float:right">
       <button v-if="user" class="button" @click="logout">Log out</button>
       </li>
+      <li id="username" style="float:right">
+        <span > {{user.nickname}}</span>
+      </li>
     </ul>
     </nav>
 </div>
