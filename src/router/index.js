@@ -20,6 +20,12 @@ const router = createRouter({
             name: 'amongus',
             component: () =>
                 import ('../views/AmongUs.vue')
+        },
+        {
+            path: '/form',
+            name: 'form',
+            component: () =>
+                import ('../views/formEntry.vue')
         }
     ]
 })
