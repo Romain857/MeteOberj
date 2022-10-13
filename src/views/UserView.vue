@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <h2>User Profile</h2>
-    <pre>
-      <code>{{ user }}</code>
-    </pre>
+  <div class="user">
+    <h2>Profile utilisateur</h2>
+    <br>
+    <img :src="user.picture" class="picture" alt="picture" />
+    <h2>Nom : {{user.nickname}}</h2>
+    <h2>Mail : {{user.email}}</h2>
   </div>
 </template>
 
