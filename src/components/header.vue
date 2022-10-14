@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
     <nav>
-      <ul>
+      <ul class="nav">
         <a href="/amongus">
         <img alt="MeteoOberj" class="logo" src="@/assets/meteoberj.png"/>
       </a>

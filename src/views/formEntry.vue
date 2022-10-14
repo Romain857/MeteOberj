@@ -2,7 +2,7 @@
   <div>
   <Dropdown
       v-model="userSelected"
-      :options="user"
+      :options="users"
       optionLabel="name"
       placeholder="Select a user"
     />
@@ -21,22 +21,22 @@ export default {
   data() {
     return {
       meteoSelected: null,
-      user:[],
-      meteo:[]
+      users: [
+			{name: 'Yohannd'},
+			{name: 'Gabrielf'},
+			{name: 'Antoined'},
+			{name: 'Erwanl'},
+			{name: 'Dorianc'}
+		],
+      meteo:[{name: 'Ensoleillé'},
+			{name: 'Eclaircie'},
+			{name: 'Nuageux'},
+			{name: 'Pluvieux'},
+			{name: 'Orageux'}]
     };
   },
 
   methods: {
-    async postData() {
-      const requestOptions = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ title: "Vue POST Request Example" }),
-      };
-      fetch("https://jsonplaceholder.typicode.com/posts", requestOptions)
-        .then((response) => response.json())
-        .then((data) => (this.entryId = data.id));
-    },
   },
 
 };
